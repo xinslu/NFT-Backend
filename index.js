@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path');
-const port = 8080;
+const port = process.env.PORT || 8080;
 const baseUri = "http://localhost:8080";
 const contractAddress = "0x1d08e9f60A9e08ABCf13124f5B98Ac47cFbcB07d";
 const Web3 = require('web3');
